@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face{
+            font-family: STAR;
+            src: url('fonts/starnight.otf') format('opentype');
+
+            /*
+            Tipos de format()
+            - opentype(otf)
+            - truetype(ttf)
+            - embedded-opentype
+            - truetype-aat (apple advanced typography)
+            */
+        }
+        @font-face {
+            font-family: hallo;
+            src: url('fonts/Hallo\ Almond.otf') format('opentype');
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+
+        }
+
+        h1{
+            font-family: 'STAR';
+            font-size: 3em;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family:'hallo' ;
+            font-size: 2em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore nam non atque, maiores quae, voluptatem voluptates sed dignissimos fugit ratione earum perferendis possimus modi recusandae, corporis unde voluptatum ipsa error.</p>
+</body>
+</html>

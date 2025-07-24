@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../exercicios/ex017"
+		},
+		{
+			"path": "../../exercicios/ex018"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "d010"
+	}
+}
