@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>
+            Teste de formulario de login
+    </h1>
+    <!--
+    action -> direcao dos dados
+    method -> metodo que ele envia os dados
+        get: aparece os dados digitados na URL
+        post: aparece dentro do devtools mas mais escondido do que o GET.
+    
+     autocomplete -> recomenda recentes usuarios/senhas/nomes etc
+
+     label -> link semantico do texto com a caixa digitavel
+
+     input:text -> adiciona caixa digitavel
+        name -> 
+        id ->
+        required -> campo obrigatorio
+        minlength -> minimo de caracteres
+        maxlength -> maximo de caracteres
+        size -> tamanho da caixa (em caracteres)
+        placeholder -> Dica dentro da caixa
+            autocomplete -> especifica qual tipo recomendar, pode ser senha para current-password, usuarios para username...
+
+    input:submit -> botao de enviar
+    input:reset -> botao para resetar caixas
+    
+    -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuario:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="12" placeholder="Digite seu usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="text" name="sen" id="isen" required minlength="8" maxlength="20" size="11" placeholder="Digite sua senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
